@@ -9,7 +9,8 @@
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="style.css">
-        <script src="./index.js"></script>
+        
+        
         
 
         <title>English Books</title>
@@ -34,7 +35,7 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Categories</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">New</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-                        <li class="nav__item"><a href="./YourCart.html" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
+                        <li class="nav__item"><a href="#cart" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
@@ -57,9 +58,8 @@
                 <h3 class="new__name product-name">The Faualt in Our Stars</h3>
                 <span class="new__detail">John Green</span>
                 <span class="new__preci product-price">0.500 KD</span>
-                <form class="add-to-cart" action="./YourCart.html" method="post">
-                   <button class="button new__button add-to-cart btn"><i class='bx bx-cart-alt'></i></button>
-                </form>
+                <button class="button new__button add-to-cart btn"onclick="addtocart(0)" id=""><i class='bx bx-cart-alt'></i></button>
+                
             </div>
 
             <div class="new__content">
@@ -67,7 +67,7 @@
                 <h3 class="new__name">Harry Potter and the Philosopher's Stone</h3>
                 <span class="new__detail">J. K. Rowling</span>
                 <span class=" new__preci">1 KD</span>
-                <button class="button new__button add-to-cart" onclick="addtocart(2)"><i class='bx bx-cart-alt'></i></button>
+                <button class="button new__button add-to-cart" onclick="addtocart(1)"><i class='bx bx-cart-alt'></i></button>
             </div>
             
             <div class="new__content">
@@ -75,7 +75,7 @@
                 <h3 class="new__name">Murder on the Orient Express</h3>
                 <span class="new__detail">Agatha Christie</span>
                 <span class="new__preci">0.750 KD</span>
-                <button class="button new__button add-to-cart" data-name="Apple" data-price="1.22"><i class='bx bx-cart-alt'></i></button>
+                <button class="button new__button add-to-cart" onclick="addtocart(2)"><i class='bx bx-cart-alt'></i></button>
             </div>
 
             <div class="new__content">
@@ -83,7 +83,7 @@
                 <h3 class="new__name">1984</h3>
                 <span class="new__detail">George Orwell</span>
                 <span class="new__preci">0.250 KD</span>
-                <button class="button new__button add-to-cart" data-name="Apple" data-price="1.22"><i class='bx bx-cart-alt'></i></button>
+                <button class="button new__button add-to-cart" onclick="addtocart(3)"><i class='bx bx-cart-alt'></i></button>
             </div>
 
             <div class="new__content">
@@ -91,7 +91,7 @@
                 <h3 class="new__name">Lord of the Rings</h3>
                 <span class="new__detail">J. R. R. Tolkien</span>
                 <span class="new__preci">0.500 KD</span>
-                <button class="button new__button add-to-cart" data-name="Apple" data-price="1.22"><i class='bx bx-cart-alt'></i></button>
+                <button class="button new__button add-to-cart" onclick="addtocart(4)"><i class='bx bx-cart-alt'></i></button>
             </div>
 
             <div class="new__content">
@@ -99,7 +99,7 @@
                 <h3 class="new__name">Moby Dick</h3>
                 <span class="new__detail">Herman Melville</span>
                 <span class="new__preci">0.750 KD</span>
-                <button class="button new__button add-to-cart" data-name="Apple" data-price="1.22"><i class='bx bx-cart-alt'></i></button>
+                <button class="button new__button add-to-cart" onclick="addtocart(5)"><i class='bx bx-cart-alt'></i></button>
             </div>
         </div>
     </section>
@@ -113,20 +113,22 @@
         <span class="section-subtitle">Your Cart</span>
         <h2 class="section-title">Cart Items</h2>
         <div class="cart__container bd-grid">
-           <table>
-               <th class="carthead">Cart</th>
+           <table class="cart-table">
+               <th class="carthead"></th>
                <tr class="cart-info">
                    <td>Name</td>
                    <td>Price</td>
                </tr>
                <tbody >
                  <tr class="list">
-                   <td id="BookName"></td>
+                   <td id="BookName">
+                   </td>
                    <td id="BookPrice"></td>
                   </tr>
                </tbody>
            </table>
-           <h2>total is <span class="total"></span>KD</h2>
+           <h2>total is <span id="total"></span>KD</h2>
+           <a href="./checkout.html" class="btn">Go To Checkout</a>
         </div>
     </section>
     

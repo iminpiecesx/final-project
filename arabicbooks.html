@@ -32,7 +32,7 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Categories</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">New</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-                        <li class="nav__item"><a href="./YourCart.html" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
+                        <li class="nav__item"><a href="#cart" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
@@ -55,7 +55,7 @@
                 <h3 class="new__name">التحول</h3>
                 <span class="new__detail">كافكا</span>
                 <span class="new__preci">0.500 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(0)"><i class='bx bx-cart-alt'></i></a>
             </div>
 
             <div class="new__content">
@@ -63,7 +63,7 @@
                 <h3 class="new__name">الغريب</h3>
                 <span class="new__detail">البير كامو</span>
                 <span class=" new__preci">1 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(1)"><i class='bx bx-cart-alt'></i></a>
             </div>
             
             <div class="new__content">
@@ -71,7 +71,7 @@
                 <h3 class="new__name">تاريخ العيون المطفأ</h3>
                 <span class="new__detail">نبيل سليمان</span>
                 <span class="new__preci">0.750 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(2)"><i class='bx bx-cart-alt'></i></a>
             </div>
 
             <div class="new__content">
@@ -79,7 +79,7 @@
                 <h3 class="new__name">ظل الريح</h3>
                 <span class="new__detail">كارلوس زافون</span>
                 <span class="new__preci">0.250 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(3)"><i class='bx bx-cart-alt'></i></a>
             </div>
 
             <div class="new__content">
@@ -87,7 +87,7 @@
                 <h3 class="new__name">عام الريح</h3>
                 <span class="new__detail">مصطفى الحسن</span>
                 <span class="new__preci">0.500 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(4)"><i class='bx bx-cart-alt'></i></a>
             </div>
 
             <div class="new__content">
@@ -95,10 +95,39 @@
                 <h3 class="new__name">رسائل نيتشه</h3>
                 <span class="new__detail">فريدريش نيتشه</span>
                 <span class="new__preci">0.750 KD</span>
-                <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
+                <a href="#" class="button new__button" onclick="addtocart(5)"><i class='bx bx-cart-alt'></i></a>
             </div>
         </div>
     </section>
+
+
+     <!-- ========== CART ========= -->
+
+
+
+     <section class="cart section bd-container" id="cart">
+        <span class="section-subtitle">Your Cart</span>
+        <h2 class="section-title">Cart Items</h2>
+        <div class="cart__container bd-grid">
+           <table class="cart-table">
+               <th class="carthead"></th>
+               <tr class="cart-info">
+                   <td>Name</td>
+                   <td>Price</td>
+               </tr>
+               <tbody >
+                 <tr class="list">
+                   <td id="BookName">
+                   </td>
+                   <td id="BookPrice"></td>
+                  </tr>
+               </tbody>
+           </table>
+           <h2>total is <span id="total"></span>KD</h2>
+           <a href="checkout.html" class="btn">Go To Checkout</a>
+        </div>
+    </section>
+    
 
 
         <!-- ========== FOOTER ========== -->

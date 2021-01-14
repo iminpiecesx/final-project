@@ -300,30 +300,30 @@ img{
   justify-self: center;
 }
 
-/*========== SERVICES ==========*/
-.services__container{
+/*========== Categories ==========*/
+.Categories__container{
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.services__content{
+.Categories__content{
   text-align: center;
 }
 
-.services__img{
+.Categories__img{
   width: 64px;
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
 }
 
-.services__title{
+.Categories__title{
   font-size: var(--h3-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
 
-.services__description{
+.Categories__description{
   padding: 0 1.5rem;
 }
 
@@ -546,7 +546,7 @@ input[type=text], select, textarea {
     justify-items: center;
   }
 
-  .services__container,
+  .Categories__container,
   .new__container{
     margin-top: var(--mb-6);
   }
@@ -588,4 +588,23 @@ input[type=text], select, textarea {
 /* checkout */
 fieldset{
   margin: 10px;
+}
+/* 
+.cart-table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #457b9d;
+} */
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  color: #707070;
 }

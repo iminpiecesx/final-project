@@ -98,12 +98,15 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
-            .services__content, .new__content,
+            .Categories__content, .new__content,
             .donate__data, .donate__img, .donate_form,
             .contact__data, .contact__button,
             .footer__content, .contact_form, .cart`, {
     interval: 200
 });
+
+
+/*==================== CART ====================*/
 
 let products =[
     {name:'The Faualt in Our Stars',price:0.500},
@@ -120,12 +123,12 @@ console.log(products);
 let cart = [];
 
 console.log(cart)
-
+    
+document.getElementById("list").innerHTML= "";
 function addtocart(index){
     let product = products[index];
     cart.push(product);
-    
-    // document.getElementById("list").innerHTML= "";
+
 
     let total = 0
 
@@ -134,19 +137,18 @@ function addtocart(index){
         total = total + element.price;
         
         let Book = document.getElementById("BookName");
-        Book.innerHTML += `<td> ${element.name}</td>`
+        Book.innerHTML += `<li> ${element.name}</li>`
 
         let Price = document.getElementById("BookPrice");
-        Price.innerHTML += `<td> ${element.price}</td>`
+        Price.innerHTML += `<li> ${element.price}</li>`
     
     }
     console.log(total)
-    document.getElementById("total").innerHTML=`<h2>${total}</h2>`;
+    document.getElementById("total").innerHTML=`<span>${total}</span>`;
 }
 
 
 
-// SHOW CART 
 
 
 
