@@ -98,7 +98,3 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 ```
-<img src="./assets/imges/1">
-<img src="./assets/imges/2">
-<img src="./assets/imges/3">
-<img src="./assets/imges/4">
