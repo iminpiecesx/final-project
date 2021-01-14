@@ -95,8 +95,3 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 ```
-
-![Tux, the Linux mascot](/assets/imges/1)
-![Tux, the Linux mascot](/assets/imges/2)
-![Tux, the Linux mascot](/assets/imges/3)
-![Tux, the Linux mascot](/assets/imges/4)
