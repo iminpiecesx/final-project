@@ -1,13 +1,13 @@
 # My Project
 ## Book Holders
 
-My project is an online second hand bookshop called _Book Holders_**
+My project is an online second hand bookshop called _Book Holders_**📚
 
 you can buy used book or donating/selling the book you've finished.
 
 
 ------------------------
-In this project i add a button to the user to change into dark mode 
+In this project i add a button to the user to change into dark mode 🔅🔆
 And i did it by javascrip as the following:
 
 ```javascript
