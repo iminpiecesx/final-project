@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="style.css">
+        <script src="./index.js"></script>
+
+        <title>Shop Now</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <!-- <img src="./assets/imges/undraw_Books_l33t (1).svg" style="width: 80px;">    -->
+                <a href="#" class="nav__logo">Book Holders</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./Homepage.html" class="nav__link active-link" target="_blank">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">New</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item"><a href="./YourCart.html" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+  <!--========== Categories ==========-->
+  <section class="services section bd-container" id="services">
+    <span class="section-subtitle">Categories</span>
+    <h2 class="section-title">Browse by the languages</h2>
+
+    <div class="services__container  bd-grid">
+        <div class="services__content">
+            <a href="./englishbooks.html" style="text-decoration: none; color: #707070" target="_blank">
+              <img src="data:image/png;base64,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"/>
+              <h3 class="services__title">English Books</h3>
+              <p class="services__description">Browse through the collection of English books we have.</p>
+            </a>
+        </div>
+
+        <div class="services__content">
+            <a href="./arabicbooks.html" style="text-decoration: none; color: #707070" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAF0ElEQVR4Xu3dT4gbVRwH8N9Lu9CDoEVBKwge6kFBtBUFDxXRTAoVFBQ0B1G7s7gWBO1BkZksLTYTaEHBQ6tiJhU9dEWpCwriTigKPehBUfxzKHjQg0Kx9Sai2fxkbSprzGZ+M/Nm573Xb6/7nZd9v09fugvf5inCH6cnoJzeHTZHAHb8LwGAAez4BBzfHk4wgB2fgOPbwwkGsOMTcHx7OMEAdnwCjm8PJxjAjk/A8e3hBAPY8Qk4vj3tJ9gLY5bMLIn8/712Vc9Kvl9bMwCeItdYePM2Gg6bTHRLEs02bEQG8Jia93x8Lc1Qk5iapOj2i19eUYPtp9rzP9iGDOALYsoLe01iXkW9fxIis2r1O7MRgC37N9gLeq+R4iYRXZ6C920S+TcD2DLgetDdr5R6WQLHRLv6kX9akjUlc8m/Re8OXt82VJt/FoEoOpq0/adFWUNClzzwqkM97C4pUg8ITM4nkX+lIGdMBMBE1Ai6TVbqhEyl9nAS7X1Xlq0+BeCRQSPsnWfirQKS95PIf1CQMyIC4IvArd4xZt4nUVEzM1cvH3zsrCRbdQbA/57g7l1M6lMRCPOzSWfuFVG24hCA1wB4YfwdEd2UbsKfJdHcnem56hMAXgscxAuk6EUJS61Gt358yP9akq0yA+C1wK3jNxAPz4hAmA4nHf8FUbbCEIDHhu+FcZ+I7hWY/JhE/vWCXKURAI8DB705UvyGREUx7Vnu+B9JslVlADw2+bsPHL1sZrDlNyLanIaiFL213PYfT8tV+XUAT5i+1+q+TaweFcD8uWVmsPWDg/O/C7KVRAA8Yez1oHufUupDiQgz+/3OXE+SrSID4HWm7oXxT0R0XTqKSkyu8wB4HcF6Kz6imJ5LByYyuc4D4HUEdwe9nUPFX0iATa7zAHiKoBfGnxPRHQJkY+s8AJ6i1wi6+9nyOg+ApwC7UOcBcMr7byPsLrHFdR4ApwFbXucBsOAnKJvrPAAWAHth/CoRPSWIkml1HgAL1BqhvXUeAAuAVyO21nkALAW2tM4DYClwljqPosNJ24w6D4CFwKO3aevqPADOAmxhnQfAGYBtrPMAOAPwP2/TltV5AJwROEudRzH7yxXXeQCcEXj0w5Y1dR4A5wC2qc4D4BzA9wS9nZssqfMAOAfw6G3aijoPgHMC21LnAXBO4D0Hjl/z12D4i+jxCj+dB8AiockhG+o8AC4CbEGdB8AFgEc/bK3+T8QrBMtU8uk8ABbITIuYXucBcEFg0+s8AC4IbHqdB8A6gDPUeYhXdiSdJ7/S8LKiJQAsGtP0kGdwnQfAGoBNrvMAWBewoXUeAGsCNrXOA2BNwKbWeQCsEdjEOg+ANQKbWOcBsGbgbHWeTdtPtZ8o9bItAGsGNq3OA2DNwKbVeQBcArBJl20BuARgk+o8AC4BeHVJeZ1HnUui2atK+jYIwCVNthH2HmHiRdny5V22BWCZQK6UF8ayOo9SJ5P27EO5XiTlIQCXMdXRmibUeQBcIrAJdR4Alwh84Xfi7vdE6sb0lynnsi0Ap0++UMKruM4D4EJ86Q9nqvOUcNkWgNONCieqvGwLwIX50hfwKqzzADjdp3CiyjoPgAvzyRao6tN5ACzzKZzKUufRedkWgAvTyReo4rItAMt9CifrQXxEKellW3rqPAAuzCZfoL7Q3aGG6kvJE7ou2wKwZNoaMxt92RaANeJJltroOg+AJSoaMxtd5wGwRjzpUvI6D51LIr9QnQfAUhWNuY2s8wBYI1yWpUR1HqXOEtNiEs0+k2XttVkA551cwecard4xZt43cRmm97hWO9Fv7z1Z8GXQqiw6wLzPT6jznGbidwZ/rCx+8tL8r3nXHX8OJ1jXJHOsM7psa4lrg8X+oflvciyR+giAU0dkd0A7sN3jcO+7B7B7pv/ZEYAB7PgEHN8eTjCAHZ+A49vDCQaw4xNwfHs4wQB2fAKObw8nGMCOT8Dx7eEEA9jxCTi+PZxgx4H/BpP6h9M0XcbaAAAAAElFTkSuQmCC"/> 
+                <h3 class="services__title">Arabic Books</h3>
+                <p class="services__description">Browse through the collection of Arabic books we have.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Book Holders</a>
+                    <span class="footer__description">Online second-hand bookshop</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Donate</a></li>
+                        <li><a href="#" class="footer__link">Request a book</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>salmiya</li>
+                        <li>street 112</li>
+                        <li>+965 1234 5678</li>
+                        <li>bookholders@email.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 AfrahCo. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="main.js"></script>
+    </body>
+</html>

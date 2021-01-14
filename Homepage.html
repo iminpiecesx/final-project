@@ -6,9 +6,11 @@
 
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="style.css">
+        <script src="./index.js"></script>
 
         <title>Book Holders</title>
     </head>
@@ -27,11 +29,12 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="./Homepage.html" class="nav__link active-link" target="_blank">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">New</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item"><a href="./YourCart.html" class="nav__link" target="_blank"><i class='bx bx-cart-alt'></i></a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
@@ -52,7 +55,7 @@
                         <h3 class="home__subtitle">The best secondhand book store.<br>
                         Browse thousands of good-quality <br> 
                         secondhand books with the best price.</h3>
-                        <a href="#" class="button">View Menu</a>
+                        <a href="./shopnow.html" class="button" target="_blank">Shop Now</a>
                     </div>
                     <img src="assets/imges/undraw_book_lover_mkck (1).svg" alt="" class="home__img">
                 </div>
@@ -64,7 +67,7 @@
                     <div class="about__data">
                         <span class="section-subtitle about__initial">About us</span>
                         <h2 class="section-title about__initial">Giving used books new life is what we do best.</h2>
-                        <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                        <p class="about__description">Millions of books are printed & sold throughout the world. You might have purchased many books but what you do after you finish reading them? Some people recycle them, dispose them as waste or keep them in the house as library. There is one more option, these can be exchanged or passed on to the next reader. And that's our job!</p>
                         <a href="#" class="button">Explore history</a>
                     </div>
 
@@ -72,78 +75,94 @@
                 </div>
             </section>
 
-            <!--========== SERVICES ==========-->
+            <!--========== Categories ==========-->
             <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Offering</span>
-                <h2 class="section-title">Our amazing services</h2>
+                <span class="section-subtitle">Categories</span>
+                <h2 class="section-title">Browse by the languages</h2>
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
-                        <img src="assets/imges/undraw_book_reading_kx9s (1).svg">
-                        <h3 class="services__title">Excellent food</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <a href="./englishbooks.html" style="text-decoration: none; color: #707070" target="_blank">
+                          <img src="data:image/png;base64,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"/>
+                          <h3 class="services__title">English Books</h3>
+                          <p class="services__description">Browse through the collection of English books we have.</p>
+                        </a>
                     </div>
 
                     <div class="services__content">
-                        <img src="./assets/imges/undraw_Books_l33t (1).svg">
-                        <h3 class="services__title">Fast food</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
-                    </div>
-
-                    <div class="services__content">
-                      <img src="./assets/imges/undraw_Bookshelves_re_lxoy (1).svg">
-                        <h3 class="services__title">Delivery</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <a href="./arabicbooks.html" style="text-decoration: none; color: #707070" target="_blank">
+                            <img src="data:image/png;base64,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"/> 
+                            <h3 class="services__title">Arabic Books</h3>
+                            <p class="services__description">Browse through the collection of Arabic books we have.</p>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!--========== MENU ==========-->
-            <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Special</span>
-                <h2 class="section-title">Menu of the week</h2>
+            <!--========== New ==========-->
+            <section class="new section bd-container" id="new">
+                <span class="section-subtitle">New</span>
+                <h2 class="section-title">Recently added books</h2>
 
-                <div class="menu__container bd-grid">
-                    <div class="menu__content">
-                        <img src="assets/imges/undraw_Reading_book_re_kqpk (1).svg" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                <div class="new__container bd-grid">
+                    <div class="new__content">
+                        <img src="assets/imges/thefaultinourstars.jpg" alt="" class="new__img">
+                        <h3 class="new__name">The Faualt in Our Stars</h3>
+                        <span class="new__detail">John Green</span>
+                        <span class="new__preci">0.500 KD</span>
+                        <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
-
-                    <div class="menu__content">
-                        <img src="assets/imges/undraw_reading_list_4boi.svg" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class=" menu__preci">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+        
+                    <div class="new__content">
+                        <img src="assets/imges/Harry Potter and the Philosopher's Stone.jpg" alt="" class="new__img">
+                        <h3 class="new__name">Harry Potter and the Philosopher's Stone</h3>
+                        <span class="new__detail">J. K. Rowling</span>
+                        <span class=" new__preci">1 KD</span>
+                        <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                     
-                    <div class="menu__content">
-                        <img src="assets/imges/undraw_reading_time_gvg0.svg" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <div class="new__content">
+                        <img src="assets/imges/Murder on the Orient Express.jpg" alt="" class="new__img">
+                        <h3 class="new__name">Murder on the Orient Express</h3>
+                        <span class="new__detail">Agatha Christie</span>
+                        <span class="new__preci">0.750 KD</span>
+                        <a href="#" class="button new__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
+        
                 </div>
             </section>
 
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
-                        <span class="section-subtitle app__initial">App</span>
-                        <h2 class="section-title app__initial">App is aviable</h2>
-                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
-                        <div class="app__stores">
-                            <a href="#"><img src="assets/imges/undraw_road_to_knowledge_m8s0.svg" alt="" class="app__store"></a>
-                            <a href="#"><img src="assets/imges/undraw_typewriter_i8xd.svg" alt="" class="app__store"></a>
+            <!--===== Donate / sell =======-->
+            <section class="donate section bd-container">
+                <div class="donate__container bd-grid">
+                    <div class="donate__data">
+                        <span class="section-subtitle donate__initial">Donate / sell</span>
+                        <h2 class="section-title donate__initial">Finished reading?</h2>
+                        <p class="donate__description">You've got a book you've finished reading, and want to donate/sell it? Well fill out the form and we'll help you out!!!</p>
+                        <div class="donate__stores">
+                            <a href="#"><img src="assets/imges/undraw_wall_post_83ul.svg" alt="" class="donate__store"></a>
                         </div>
                     </div>
+                    <div class="donate_form">
+                        <form action="/action_page.php">
+                            <label for="fname" class="fname">Full Name</label>
+                            <input type="text" id="fname" name="fullname" placeholder="Your name..">
 
-                    <img src="assets/img/movil-app.png" alt="" class="app__img">
+                            <label for="email" class="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email..">
+
+                            <label for="choice">choose a service</label>
+                             <select id="choice" name="choises">
+                                   <option value="donating">Donating</option>
+                                   <option value="selling">Selling</option>
+                             </select>
+                        
+                          <label for="condition">Book information</label>
+                          <textarea id="condition" name="info" placeholder="Name of the book ,condition of the book, which edition and the year of release ...." style="height:200px"></textarea>
+                              
+                         <input type="submit" value="Submit">
+                        </form>
+                    </div>
                 </div>
             </section>
 
@@ -157,7 +176,7 @@
                     </div>
 
                     <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
+                        <a href="./contactus.html" class="button">Contact us now</a>
                     </div>
                 </div>
             </section>
@@ -167,8 +186,8 @@
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
-                    <span class="footer__description">Restaurant</span>
+                    <a href="#" class="footer__logo">Book Holders</a>
+                    <span class="footer__description">Online second-hand bookshop</span>
                     <div>
                         <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
                         <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
@@ -181,15 +200,14 @@
                     <ul>
                         <li><a href="#" class="footer__link">Delivery</a></li>
                         <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                        <li><a href="#" class="footer__link">Donate</a></li>
+                        <li><a href="#" class="footer__link">Request a book</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">Information</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Event</a></li>
                         <li><a href="#" class="footer__link">Contact us</a></li>
                         <li><a href="#" class="footer__link">Privacy policy</a></li>
                         <li><a href="#" class="footer__link">Terms of services</a></li>
@@ -199,15 +217,15 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Adress</h3>
                     <ul>
-                        <li>Lima - Peru</li>
-                        <li>Jr Union #999</li>
-                        <li>999 - 888 - 777</li>
-                        <li>tastyfood@email.com</li>
+                        <li>salmiya</li>
+                        <li>street 112</li>
+                        <li>+965 1234 5678</li>
+                        <li>bookholders@email.com</li>
                     </ul>
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+            <p class="footer__copy">&#169; 2021 AfrahCo. All right reserved</p>
         </footer>
 
         <!--========== SCROLL REVEAL ==========-->

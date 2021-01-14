@@ -98,9 +98,57 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
-            .services__content, .menu__content,
-            .app__data, .app__img,
+            .services__content, .new__content,
+            .donate__data, .donate__img, .donate_form,
             .contact__data, .contact__button,
-            .footer__content`, {
+            .footer__content, .contact_form, .cart`, {
     interval: 200
-            })
+});
+
+let products =[
+    {name:'The Faualt in Our Stars',price:0.500},
+    {name: "Harry Potter and the Philosopher's Stone",price:1},
+    {name:'Murder on the Orient Express',price:0.750},
+    {name:'1984',price:0.25},
+    {name:'Lord of the Rings',price:0.500},
+    {name:'Moby Dick',price:0.750}
+];
+
+console.log(products);
+
+
+let cart = [];
+
+console.log(cart)
+
+function addtocart(index){
+    let product = products[index];
+    cart.push(product);
+    
+    // document.getElementById("list").innerHTML= "";
+
+    let total = 0
+
+    for (let index = 0; index < cart.length; index++) {
+        const element = cart[index];
+        total = total + element.price;
+        
+        let Book = document.getElementById("BookName");
+        Book.innerHTML += `<td> ${element.name}</td>`
+
+        let Price = document.getElementById("BookPrice");
+        Price.innerHTML += `<td> ${element.price}</td>`
+    
+    }
+    console.log(total)
+    document.getElementById("total").innerHTML=`<h2>${total}</h2>`;
+}
+
+
+
+// SHOW CART 
+
+
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="style.css">
+        <script src="./index.js"></script>
+        
+    
+        <title>Your Cart</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <!-- <img src="./assets/imges/undraw_Books_l33t (1).svg" style="width: 80px;">    -->
+                <a href="#" class="nav__logo">Book Holders</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./Homepage.html" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">New</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+
+         <!-- ========== CHECKOUT ========= -->
+         <section class="cart section bd-container" id="cart">
+            <span class="section-subtitle">Checkout</span>
+            <h2 class="section-title">Please fill out your information</h2>
+            <div class="new__container">
+              <div class="new_content bd-container">
+                 <form action="order.html" method="post" id="checkout-order-form">
+                     <h2>Your Details</h2>
+                     <fieldset id="fieldset-billing">
+                         <legend>Billing</legend>
+                         <!-- Name, Email, City, Address, ZIP Code, Country (select box) -->
+
+                         <div>
+                              <label for="name">Name</label><br>
+                             <input type="text" name="name" id="name" data-type="string" data-message="This field may not be empty" placeholder="full name."/>
+                         </div>
+
+                         <div>
+                             <label for="email">Email</label><br>
+                             <input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" placeholder="example@email.com"/>
+                         </div>
+
+                         <div>
+                             <label for="city">Area</label><br>
+                             <input type="text" name="city" id="city" data-type="string" data-message="This field may not be empty" placeholder="your area"/>
+                         </div>
+
+                         <div>
+                             <label for="address">Address</label><br>
+                             <input type="text" name="address" id="address" data-type="string" data-message="This field may not be empty" placeholder="adrees"/>
+                         </div>
+
+                         <div>
+                             <label for="zip">Phone No.</label><br>
+                             <input type="text" name="zip" id="zip" data-type="string" data-message="This field may not be empty" placeholder="your number"/>
+                         </div>
+
+                         <div>
+                             <label for="country">Country</label><br>
+                             <select name="country" id="country" data-type="string" data-message="This field may not be empty" >
+                                 <option value="">Select</option>
+                                 <option value="asemah">Alasemah</option>
+                                 <option value="hawalley">Hawalley</option>
+                                 <option value="alahmadY">Alahmady</option>
+                                 <option value="farwaneya">Farwaneya</option>
+                                 <option value="mubarak">Mubarak Alkabeer</option>
+                                 <option value="aljahra">aljahra</option>
+
+                             </select>
+                         </div>
+                     </fieldset>
+
+                     
+
+                     <fieldset id="fieldset-shipping">
+                         <legend>Shipping</legend>
+                         <!-- Same fields as billing -->
+                         <div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+                        </fieldset>
+
+                     <p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
+                 </form>
+             </div>
+
+
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Book Holders</a>
+                    <span class="footer__description">Online second-hand bookshop</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Donate</a></li>
+                        <li><a href="#" class="footer__link">Request a book</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>salmiya</li>
+                        <li>street 112</li>
+                        <li>+965 1234 5678</li>
+                        <li>bookholders@email.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 AfrahCo. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="main.js"></script>
+    </body>
+</html>
+
