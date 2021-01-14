@@ -3,6 +3,9 @@
 
 My project is an online second hand bookshop called _Book Holders_**
 
+you can buy used book or donating/selling the book you've finished.
+
+
 ------------------------
 In this project i add a button to the user to change into dark mode 
 And i did it by javascrip as the following:
@@ -95,3 +98,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 ```
+<img src="./assets/imges/1">
+<img src="./assets/imges/2">
+<img src="./assets/imges/3">
+<img src="./assets/imges/4">
